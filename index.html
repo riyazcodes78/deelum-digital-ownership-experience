@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<title>DEELUM — Digital Ownership Experience</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="grain"></div>
+<header class="nav">
+  <div class="wordmark">DEELUM <span>/ DIGITAL OWNERSHIP</span></div>
+  <div class="nav-center" id="navCenter">OWNERSHIP, BEYOND THE PROPERTY</div>
+  <div class="nav-right"><span id="counter">01 / 10</span><button id="conciergeOpen">PRIVATE CONCIERGE ↗</button></div>
+</header>
+<main id="app"></main>
+
+<aside class="concierge" id="concierge">
+  <button class="close" id="conciergeClose">×</button>
+  <div class="micro">PRIVATE CONCIERGE</div>
+  <h3>What are you looking for?</h3>
+  <p>The experience can adapt around the reason someone is exploring ownership.</p>
+  <div class="concierge-grid">
+    <button data-intent="Lifestyle">Lifestyle</button>
+    <button data-intent="Investment">Investment</button>
+    <button data-intent="Second home">Second home</button>
+    <button data-intent="Exploring">Just exploring</button>
+  </div>
+  <div class="concierge-answer" id="conciergeAnswer"></div>
+</aside>
+
+<div class="toast" id="toast"></div>
+<div class="transition" id="transition">
+  <div class="veil"></div><div class="blade blade-a"></div><div class="blade blade-b"></div><div class="light-line"></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
